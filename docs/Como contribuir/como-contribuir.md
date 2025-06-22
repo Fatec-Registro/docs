@@ -1,3 +1,5 @@
+# 🫱🏻‍🫲🏻 Como Contribuir
+
 🫶 Agradecemos o seu interesse em contribuir com o projeto! Para manter a organização e a clareza no desenvolvimento, seguimos padrões para a criação de branches e para a escrita de mensagens de commit. Seguir estas diretrizes nos ajuda a gerenciar o histórico de versões de forma eficiente e a automatizar tarefas como a geração de changelogs.
 
 ### 🧭 Padrão de Nomenclatura de Branches
@@ -65,7 +67,7 @@ Para manter um histórico de commits claro e rastreável, seguimos o padrão **C
 -   **Corpo (Opcional)**: Uma explicação mais detalhada, justificando a mudança e o seu impacto.
 -   **Rodapé (Opcional)**: Usado para referenciar issues (`Resolve: #123`) ou para indicar mudanças que quebram a compatibilidade (`BREAKING CHANGE:`).
 
-#### 例文 Exemplos de Commits
+#### 📝 Exemplos de Commits
 
 **Commit simples (apenas título):**
 ```bash
