@@ -3,7 +3,7 @@
 For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
 ## Commands
-* `pip install mkdocs` - To install MkDocs.
+* `mkdocs serve` - To install MkDocs.
 * `pip install mkdocs-material` - To install mkdocs-material.
 * `mkdocs new [dir-name]` - Create a new project.
 * `mkdocs serve` - Start the live-reloading docs server.
