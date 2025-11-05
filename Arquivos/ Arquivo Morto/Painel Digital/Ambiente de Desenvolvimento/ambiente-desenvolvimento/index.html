@@ -1,0 +1,1707 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../../../../../Vis%C3%A3o%20Geral/">
+      
+      
+        <link rel="next" href="../arquitetura/">
+      
+      
+      <link rel="icon" href="../../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.23">
+    
+    
+      
+        <title>🏗️ Ambiente de Desenvolvimento - Docs Fatec Registro</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.84d31ad4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="red" data-md-color-accent="red">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#ambiente-de-desenvolvimento" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../../.." title="Docs Fatec Registro" class="md-header__button md-logo" aria-label="Docs Fatec Registro" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Docs Fatec Registro
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              🏗️ Ambiente de Desenvolvimento
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="red" data-md-color-accent="red"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="red" data-md-color-accent="red"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../../.." title="Docs Fatec Registro" class="md-nav__button md-logo" aria-label="Docs Fatec Registro" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Docs Fatec Registro
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    FATEC Registro - Documentação Oficial
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../Links%20%C3%9Ateis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Links Úteis
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../Vis%C3%A3o%20Geral/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Visão Geral
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Arquivos
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Arquivos
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+     Arquivo Morto
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4_1">
+            <span class="md-nav__icon md-icon"></span>
+             Arquivo Morto
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4_1_1" id="__nav_4_1_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Painel Digital
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_1_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4_1_1">
+            <span class="md-nav__icon md-icon"></span>
+            Painel Digital
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_1_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4_1_1_1" id="__nav_4_1_1_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Ambiente de Desenvolvimento
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_1_1_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4_1_1_1">
+            <span class="md-nav__icon md-icon"></span>
+            Ambiente de Desenvolvimento
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    🏗️ Ambiente de Desenvolvimento
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    🏗️ Ambiente de Desenvolvimento
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#tecnologias-utilizadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 Tecnologias Utilizadas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuracao-do-ambiente" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚙️ Configuração do Ambiente
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="⚙️ Configuração do Ambiente">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-clone-o-repositorio" class="md-nav__link">
+    <span class="md-ellipsis">
+      1️⃣ Clone o repositório:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-instale-as-dependencias-do-projeto" class="md-nav__link">
+    <span class="md-ellipsis">
+      2️⃣ Instale as dependências do projeto:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-crie-o-arquivo-env-na-raiz-do-projeto-com-as-seguintes-variaveis" class="md-nav__link">
+    <span class="md-ellipsis">
+      3️⃣ Crie o arquivo .env na raiz do projeto com as seguintes variáveis:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-execute-o-projeto-no-ambiente-de-desenvolvimento-com-hot-reload" class="md-nav__link">
+    <span class="md-ellipsis">
+      4️⃣ Execute o projeto no ambiente de desenvolvimento (com hot reload):
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#informacoes-adicionais" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 Informações Adicionais
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💡 Informações Adicionais">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#validacao-de-dados" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Validação de Dados
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#autenticacao-e-seguranca" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔐 Autenticação e Segurança
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentacao-da-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      📄 Documentação da API
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#convencoes-http" class="md-nav__link">
+    <span class="md-ellipsis">
+      🌐 Convenções HTTP
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🌐 Convenções HTTP">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#metodos-http" class="md-nav__link">
+    <span class="md-ellipsis">
+      📜 Métodos HTTP
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#codigos-de-status-http" class="md-nav__link">
+    <span class="md-ellipsis">
+      📑 Códigos de Status HTTP
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#observacoes-finais" class="md-nav__link">
+    <span class="md-ellipsis">
+      📝 Observações Finais
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#atencao" class="md-nav__link">
+    <span class="md-ellipsis">
+      📌 Atenção:
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../arquitetura/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    📦 Arquitetura Backend
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_1_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_1_1_2" id="__nav_4_1_1_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Como contribuir
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_1_1_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1_1_2">
+            <span class="md-nav__icon md-icon"></span>
+            Como contribuir
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Como%20contribuir/como-contribuir/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    🫱🏻‍🫲🏻 Como Contribuir
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_1_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_1_1_3" id="__nav_4_1_1_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Desenvolvimento Front End
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_1_1_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1_1_3">
+            <span class="md-nav__icon md-icon"></span>
+            Desenvolvimento Front End
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Desenvolvimento%20Front-End/front/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    📁 Estrutura do Projeto Front-End
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_1_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_1_1_4" id="__nav_4_1_1_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Modelagem do Banco
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_1_1_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1_1_4">
+            <span class="md-nav__icon md-icon"></span>
+            Modelagem do Banco
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Modelagem%20do%20Banco/modelagem/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    🎲 Documentação do Banco de Dados
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_1_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_1_1_5" id="__nav_4_1_1_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Painel Digital
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_1_1_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1_1_5">
+            <span class="md-nav__icon md-icon"></span>
+            Painel Digital
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Painel%20Digital/painel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Painel Digital
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Designer
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Designer
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../Designer/Design%20System/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Design System
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    DevOps
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            DevOps
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../DevOps/Gitflow/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Gitflow
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Equipe
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Equipe
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../Equipe/Acordos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Acordos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Setup
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Setup
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../setup/docs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Bem-vindo ao MkDocs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#tecnologias-utilizadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 Tecnologias Utilizadas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuracao-do-ambiente" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚙️ Configuração do Ambiente
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="⚙️ Configuração do Ambiente">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-clone-o-repositorio" class="md-nav__link">
+    <span class="md-ellipsis">
+      1️⃣ Clone o repositório:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-instale-as-dependencias-do-projeto" class="md-nav__link">
+    <span class="md-ellipsis">
+      2️⃣ Instale as dependências do projeto:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-crie-o-arquivo-env-na-raiz-do-projeto-com-as-seguintes-variaveis" class="md-nav__link">
+    <span class="md-ellipsis">
+      3️⃣ Crie o arquivo .env na raiz do projeto com as seguintes variáveis:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-execute-o-projeto-no-ambiente-de-desenvolvimento-com-hot-reload" class="md-nav__link">
+    <span class="md-ellipsis">
+      4️⃣ Execute o projeto no ambiente de desenvolvimento (com hot reload):
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#informacoes-adicionais" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 Informações Adicionais
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💡 Informações Adicionais">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#validacao-de-dados" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Validação de Dados
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#autenticacao-e-seguranca" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔐 Autenticação e Segurança
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentacao-da-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      📄 Documentação da API
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#convencoes-http" class="md-nav__link">
+    <span class="md-ellipsis">
+      🌐 Convenções HTTP
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🌐 Convenções HTTP">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#metodos-http" class="md-nav__link">
+    <span class="md-ellipsis">
+      📜 Métodos HTTP
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#codigos-de-status-http" class="md-nav__link">
+    <span class="md-ellipsis">
+      📑 Códigos de Status HTTP
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#observacoes-finais" class="md-nav__link">
+    <span class="md-ellipsis">
+      📝 Observações Finais
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#atencao" class="md-nav__link">
+    <span class="md-ellipsis">
+      📌 Atenção:
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="ambiente-de-desenvolvimento">🏗️ Ambiente de Desenvolvimento</h1>
+<p>Este documento descreve como configurar o ambiente de desenvolvimento, instalar as dependências e executar o projeto base. Também apresenta a estrutura do projeto e o padrão adotado para a criação de novos módulos.</p>
+<hr />
+<h2 id="tecnologias-utilizadas">🚀 Tecnologias Utilizadas</h2>
+<p><a href="https://nodejs.org/"><img alt="Node.js" src="https://img.shields.io/badge/Node.js-339933?logo=node.js&amp;logoColor=fff" /></a><br />
+<a href="https://expressjs.com/"><img alt="Express" src="https://img.shields.io/badge/Express.js-000000?logo=express&amp;logoColor=fff" /></a><br />
+<a href="https://www.mongodb.com/"><img alt="MongoDB" src="https://img.shields.io/badge/MongoDB-47A248?logo=mongodb&amp;logoColor=fff" /></a><br />
+<a href="https://zod.dev/"><img alt="Zod" src="https://img.shields.io/badge/Zod-000000?logo=zod&amp;logoColor=white" /></a><br />
+<a href="https://jwt.io/"><img alt="JWT" src="https://img.shields.io/badge/JSON%20Web%20Token-000000?logo=jsonwebtokens&amp;logoColor=white" /></a><br />
+<a href="https://github.com/kelektiv/node.bcrypt.js"><img alt="Bcrypt" src="https://img.shields.io/badge/Bcrypt-00599C?logo=key&amp;logoColor=white" /></a><br />
+<a href="https://swagger.io/"><img alt="Swagger" src="https://img.shields.io/badge/Swagger-85EA2D?logo=swagger&amp;logoColor=black" /></a></p>
+<hr />
+<h2 id="configuracao-do-ambiente">⚙️ Configuração do Ambiente</h2>
+<h3 id="1-clone-o-repositorio">1️⃣ Clone o repositório:</h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/Fatec-Registro/painel-digital-be.git
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nb">cd</span><span class="w"> </span>painel-digital-be
+</span></code></pre></div>
+<h3 id="2-instale-as-dependencias-do-projeto">2️⃣ Instale as dependências do projeto:</h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>npm<span class="w"> </span>install
+</span></code></pre></div>
+<h3 id="3-crie-o-arquivo-env-na-raiz-do-projeto-com-as-seguintes-variaveis">3️⃣ Crie o arquivo <code>.env</code> na raiz do projeto com as seguintes variáveis:</h3>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>MONGO_URI=mongodb://localhost:27017/painel-digital
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>PORT=3000
+</span></code></pre></div>
+<h3 id="4-execute-o-projeto-no-ambiente-de-desenvolvimento-com-hot-reload">4️⃣ Execute o projeto no ambiente de desenvolvimento (com hot reload):</h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>npm<span class="w"> </span>run<span class="w"> </span>dev
+</span></code></pre></div>
+<hr />
+<h2 id="informacoes-adicionais">💡 Informações Adicionais</h2>
+<h3 id="validacao-de-dados">✅ Validação de Dados</h3>
+<ul>
+<li>Utilize <strong>Zod</strong> para validar os dados nas operações de criação e atualização de documentos. Isso garante a consistência dos dados e evita registros inválidos no banco.</li>
+</ul>
+<h3 id="autenticacao-e-seguranca">🔐 Autenticação e Segurança</h3>
+<ul>
+<li>
+<p>A autenticação dos usuários é realizada por meio de JWT (JSON Web Token), que gera um token de acesso após o login bem-sucedido. Esse token é utilizado nas requisições para acessar rotas protegidas, garantindo a segurança e o controle de acesso à API.</p>
+</li>
+<li>
+<p>As senhas dos usuários são armazenadas de forma segura utilizando Bcrypt, uma biblioteca de hashing que aplica algoritmos de criptografia, garantindo que as senhas estejam protegidas, mesmo em caso de vazamento de dados.</p>
+</li>
+</ul>
+<h3 id="documentacao-da-api">📄 Documentação da API</h3>
+<ul>
+<li>A API é documentada utilizando o Swagger, que permite a geração de uma interface interativa e de fácil acesso para explorar todos os endpoints disponíveis. A documentação detalha os métodos, parâmetros, estruturas de requisição e resposta, facilitando o entendimento e a integração com outros desenvolvedores e sistemas.</li>
+</ul>
+<hr />
+<h2 id="convencoes-http">🌐 Convenções HTTP</h2>
+<h3 id="metodos-http">📜 Métodos HTTP</h3>
+<table>
+<thead>
+<tr>
+<th>Método</th>
+<th>Descrição</th>
+<th>Uso</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>GET</strong></td>
+<td>🔍 Buscar dados</td>
+<td>Consultas, listagens e buscas</td>
+</tr>
+<tr>
+<td><strong>POST</strong></td>
+<td>➕ Criar novo recurso</td>
+<td>Criação de dados</td>
+</tr>
+<tr>
+<td><strong>PUT</strong></td>
+<td>🔄 Atualizar recurso inteiro</td>
+<td>Atualização completa de um recurso</td>
+</tr>
+<tr>
+<td><strong>PATCH</strong></td>
+<td>🩹 Atualizar parcialmente</td>
+<td>Alteração parcial de um recurso</td>
+</tr>
+<tr>
+<td><strong>DELETE</strong></td>
+<td>🗑️ Remover recurso</td>
+<td>Exclusão de registros</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="codigos-de-status-http">📑 Códigos de Status HTTP</h3>
+<table>
+<thead>
+<tr>
+<th>Código</th>
+<th>Nome</th>
+<th>Descrição</th>
+<th>Quando Usar</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>200</strong></td>
+<td>✅ OK</td>
+<td>Requisição bem-sucedida.</td>
+<td>Operações realizadas com sucesso (ex.: listar, buscar, atualizar).</td>
+</tr>
+<tr>
+<td><strong>201</strong></td>
+<td>🆕 Created</td>
+<td>Recurso criado com sucesso.</td>
+<td>Após criar um novo recurso (ex.: novo usuário, novo produto).</td>
+</tr>
+<tr>
+<td><strong>204</strong></td>
+<td>🚫 No Content</td>
+<td>Sucesso, porém sem retorno no corpo da resposta.</td>
+<td>Quando uma ação foi concluída, mas não há dados para retornar (ex.: deletar um recurso).</td>
+</tr>
+<tr>
+<td><strong>400</strong></td>
+<td>❌ Bad Request</td>
+<td>Erro na requisição. Dados inválidos ou mal formatados.</td>
+<td>Quando a validação dos dados falha (ex.: campos obrigatórios ausentes ou dados mal estruturados).</td>
+</tr>
+<tr>
+<td><strong>401</strong></td>
+<td>🔐 Unauthorized</td>
+<td>Não autorizado. Falta autenticação ou token inválido.</td>
+<td>Quando o usuário não está autenticado (ex.: token não enviado ou inválido).</td>
+</tr>
+<tr>
+<td><strong>403</strong></td>
+<td>🚫 Forbidden</td>
+<td>Acesso proibido. Usuário autenticado, porém sem permissão.</td>
+<td>Quando o usuário não possui permissão para determinada ação.</td>
+</tr>
+<tr>
+<td><strong>404</strong></td>
+<td>🔎 Not Found</td>
+<td>Recurso não encontrado.</td>
+<td>Quando um recurso não existe (ex.: ID inválido ou inexistente).</td>
+</tr>
+<tr>
+<td><strong>409</strong></td>
+<td>⚠️ Conflict</td>
+<td>Conflito na requisição.</td>
+<td>Quando há conflito na criação (ex.: e-mail já cadastrado).</td>
+</tr>
+<tr>
+<td><strong>422</strong></td>
+<td>🚫 Unprocessable Entity</td>
+<td>Dados semanticamente inválidos.</td>
+<td>Quando os dados estão no formato correto, mas não fazem sentido na lógica (ex.: quantidade negativa).</td>
+</tr>
+<tr>
+<td><strong>500</strong></td>
+<td>💥 Internal Server Error</td>
+<td>Erro interno no servidor.</td>
+<td>Falhas inesperadas no backend (ex.: erros no banco ou exceções não tratadas).</td>
+</tr>
+<tr>
+<td>Add commentMore actions</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>---</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="observacoes-finais">📝 Observações Finais</h2>
+<ul>
+<li>Mantenha o padrão de desenvolvimento e a arquitetura definida para garantir a escalabilidade e a manutenibilidade do projeto.</li>
+<li>Dúvidas sobre a arquitetura? Consulte o arquivo 👉 <a href="../arquitetura/">arquitetura.md</a>.</li>
+</ul>
+<h2 id="atencao">📌 <strong>Atenção:</strong></h2>
+<p>Na pasta <code>src/modules</code> há um módulo chamado <code>example</code>. Este módulo serve <strong>exclusivamente como modelo</strong> de como estruturar novos módulos no projeto. </p>
+<p>Nele, você encontra o padrão de organização dos arquivos, incluindo:
+- Controller
+- Service
+- Module
+- Routes
+- DTO</p>
+<p>Esse módulo não faz parte da aplicação em produção. Ao criar um novo módulo, copie a estrutura do <code>example</code> e adapte conforme a necessidade da sua funcionalidade.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../../../../..", "features": ["content.code.copy"], "search": "../../../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../../../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>
